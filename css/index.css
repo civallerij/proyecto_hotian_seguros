@@ -40,7 +40,7 @@
 }
 
 img {
-width: 100%;
+    width: 100%;
 
 }
 
@@ -91,53 +91,53 @@ body {
     align-items: center;
     justify-content: space-between;
     padding: 2vw;
-
-
 }
 
 
-.menu {
+ .menu {
     display: flex;
     justify-content: space-around;
-    color: var(--secondary);
     list-style-type:none;
-    
+    width: 100vw;
 }
 
 
 .menu__link {
     
-    padding: 1.2vw;
-    text-decoration: none;
-    color: var(--alternative-white);
-   /* border: 0.2vw solid var(--tercery) */  
+    
+    color:var(--alternative-black);
+    
      
 }
 
-.menu__link:hover {
- background-color: #05A0F6;
-    transition: ease-in-out 1.5s;
-}
-
 .menu__link-act {
-    padding: 1.2vw;
-    text-decoration: none;
+    background-color: var(--primary);
     color: var(--alternative-white);
-    border: 0.2vw solid var(--secondary)
+    padding: 2vw 5vw 2vw 5vw;
+   
+   
 }
 
-.menu__link-act:hover {
-    background-color: var(--tercery);
-    transition: ease-in-out 1.5s;
-
+.navbar {
+    padding: 2vw;
+    font-family: var(--text-alt);
+    font-size: var(--text-l);
+   
 }
-
-
 
 /* MAIN INDEX */
 
+
+
 .main{
     background-image: url(https://fondosmil.com/fondo/31337.jpg);
+}
+
+.article-home{
+    margin-top: 2vw;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-around;
 }
 
 .cards {
@@ -161,11 +161,16 @@ body {
     height: 40vh;
 }
 
-.article-home{
-    margin-top: 2vw;
-   display: flex;
-   flex-direction: row;
-   justify-content: space-around;
+.carousel-inner{
+    width: 50vw;
+    height: 80vh;
+    padding-left: 25vw;
+    padding-top: 5vw;
+}
+
+.d-block {
+    width: 50vw;
+    height: 50vh;
 }
 
 
@@ -176,13 +181,14 @@ body {
     justify-content: space-around;
 }
     
-
-
-.imagen-home {
-    width: 40vw;
-    height: 50vh;
-    border: 0.2vw solid var(--alternative-black)
+.img-fluid {
+    margin-left: 7vw;
+    width: 20vw;
+    height: 20vh;
+    border: 0.2vw solid var(--alternative-white)
+    
 }
+
 
 
 .text-home {
@@ -192,12 +198,16 @@ body {
     height: 40vh;
     font-size: var(--text-xl);
     font-family: var(--text-base);
+    color: var(--alternative-white);
 }
 
-.icon-home{
+.rounded3{
+    padding: 2vw;
     width: 20vw;
     height: 30vh;
 }
+
+
 
 /* MAIN PRODUCTOS */
 
@@ -226,30 +236,42 @@ body {
     display: flex;
     justify-content: center;
     color: var(--alternative-white);
-}
-
-.text-siniestro {
-    display: flex;
-    justify-content: center;
-    color: var(--alternative-white);
-    font-size: var(--text-sm);
+    padding-top: 1vw;
     padding-bottom: 2vw;
 }
 
-.form-siniestro {
+.section-siniestros {
+    width: 100vw;
+    height: 130vh;
+    padding: 2vw;
+    font-size: var(--text-l);
     
-    
-    padding: 0.3vw;
-    color: var(--alternative-white);
-    font-size: var(--text-sm);
+}
+
+.article-siniestros {
+  padding: 1vw;
+  
+}
+
+
+.mb-3{
+    padding: .5vw;
     color: var(--alternative-white);
 }
 
-.form-submit {
-    display: flex;
+.title-form {
+    display: flex ;
     justify-content: center;
-    margin: 0.2vw;
+    color: var(--alternative-white);
 }
+
+.subtitle-form {
+    display: flex ;
+    justify-content: center;
+    color: var(--alternative-white);
+}
+
+
 
 /*MAIN QUIENES SOMOS */
 
@@ -266,12 +288,27 @@ body {
     font-size: var(--text-l);
 }
 
+.rounded{
+    padding: 2vw;
+    width: 40vw;
+    height: 60vh;
+    
+}
+
+.section-quienes {
+    margin-left: 10vw;
+    font-size: var(--text-xl);
+    padding-bottom: 3vw;
+}
+
+
 /* MAIN CONTACTO */
 
 .article-contacto {
     color: var(--alternative-white);
     font-size: var(--text-md);
-   
+    padding-top: 5vw;
+    padding-bottom: 3vw;
 }
 
 
@@ -302,6 +339,12 @@ body {
     display: flex;
     justify-content: center;
 }
+
+.article-contacto-form .button-contacto {
+    height: 1vw;
+    padding-top: 5vw;
+}
+
 
 /* FOOTER */
 
