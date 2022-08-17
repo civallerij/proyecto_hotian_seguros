@@ -234,6 +234,12 @@ body {
     color: var(--alternative-white);
     font-size: var(--text-sm);
     padding-bottom: 2vw;
+    padding-left: 5vw;
+    padding-right: 5vw;
+}
+
+.article-form {
+    padding-bottom: 3vw;
 }
 
 .form-siniestro {
