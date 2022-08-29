@@ -12,16 +12,28 @@
   /* font-family */
   --text-base: 'Oswald', sans-serif;
   --text-alt: 'Source Sans Pro', sans-serif;
-  /* fonts-sizes */
-  --text-xxl: 48px;
-  --text-xl: 30px;
-  --text-l: 20px;
-  --text-md: 16px;
-  --text-sm: 14px;
+ 
   /* spacing */
   --spacing-lg: 48px;
   --spacing-md: 36px;
-  --spacing-sm: 24px; }
+  --spacing-sm: 24px; } 
+  
+  /* fonts-sizes */
+  
+  :root .--text-xxl {
+    font-size: 48px !important; }
+  :root .--text-xl {
+    font-size: 30px !important; }
+  :root .--text-l {
+    font-size: 20px !important; }
+  :root .--text-md {
+    font-size: 16px !important; }
+  :root .--text-sm {
+    font-size: 14px !important; }
+
+.center, .main-footer__section .hotian-seguros {
+  display: flex;
+  justify-content: center; }
 
 /* NORMALIZE */
 * {
@@ -53,11 +65,11 @@ body {
   width: 100vw;
   height: 17vw; }
   .main-header .logo {
-    width: 20vw;
-    height: 20vh; }
+    height: 20vh;
+    width: 20vw; }
   .main-header .main-header__imagen {
-    width: 15vw;
-    height: 10vh; }
+    height: 10vh;
+    width: 15vw; }
   .main-header .main-header__principal {
     display: flex;
     align-items: center;
@@ -100,8 +112,8 @@ body {
     height: 30vh;
     border: 0.2vw solid var(--alternative-black); }
   .cards .card:hover {
-    width: 30vw;
-    height: 40vh; }
+    height: 40vh;
+    width: 20vw; }
 
 .article-home {
   margin-top: 2vw;
@@ -131,14 +143,9 @@ body {
   background-color: var(--primary);
   color: var(--alternative-white);
   font-size: var(--text-sm); }
-  .main-footer__section .hotian-seguros {
-    display: flex;
-    justify-content: center; }
   .main-footer__section .informacion {
     display: flex;
     justify-content: center; }
   .main-footer__section .derechos {
     display: flex;
     justify-content: center; }
-
-    

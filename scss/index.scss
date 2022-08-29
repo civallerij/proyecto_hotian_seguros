@@ -17,18 +17,42 @@
 --text-base: 'Oswald', sans-serif;
 --text-alt: 'Source Sans Pro', sans-serif;
 
-/* fonts-sizes */
 
---text-xxl: 48px;
---text-xl: 30px;
---text-l: 20px;
---text-md: 16px;
---text-sm: 14px;
+/* fonts-sizes */
+$fonts-sizes: (
+    --text-xxl: 48px,
+    --text-xl: 30px,
+    --text-l: 20px,
+    --text-md: 16px,
+    --text-sm: 14px
+);
+
+@each $key, $val in $fonts-sizes {
+    .#{$key} {
+        font-size: $val!important;
+    }
+}
+
+
 
 /* spacing */
+
 --spacing-lg: 48px;
 --spacing-md: 36px;
 --spacing-sm: 24px;
+}
+ 
+
+
+@mixin size ($width, $height){
+    height: $height;
+    width: $width;
+    
+}
+
+.center {
+    display: flex;
+    justify-content: center;
 }
 
 /* NORMALIZE */
@@ -69,16 +93,15 @@ body {
 .main-header {
     background-color: var(--primary);
     width: 100vw;
-    height: 17vw;
+    height: 17vw; 
     .logo{
-    width: 20vw;
-    height: 20vh;
+ 
+    @include size(20vw, 20vh )
     }
 
 
     .main-header__imagen{
-    width: 15vw;
-    height: 10vh;
+    @include size(15vw, 10vh )
     }
 
     .main-header__principal{
@@ -145,9 +168,9 @@ body {
     }
 
     .card:hover {
-    width: 30vw;
-    height: 40vh;
+    @include size(20vw, 40vh )
     }
+
 
 }
 
@@ -187,6 +210,8 @@ body {
 /* FOOTER */
 
 
+
+
 .main-footer__section {
     
     background-color: var(--primary);
@@ -194,18 +219,17 @@ body {
     font-size: var(--text-sm);
     
     .hotian-seguros  {
-    display: flex;
-    justify-content: center;
+    @extend .center
     }
 
     .informacion{
-    display: flex;
-    justify-content: center;
+        display: flex;
+        justify-content: center;
     }
 
     .derechos{
-    display: flex;
-    justify-content: center;
+        display: flex;
+        justify-content: center;
     }
 }
 
