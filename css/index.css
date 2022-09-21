@@ -377,6 +377,7 @@ body {
     flex-direction: column;
     padding-top: 10vw; }
 
+/* VIDA */
 .section-vida {
   font-family: var(--text-alt);
   padding: 5vw 20vh 10vw 20vh; }
@@ -399,6 +400,7 @@ body {
   width: 50vw;
   height: 70vh; }
 
+/* FAMILIA */
 .section-familia {
   font-family: var(--text-alt);
   padding: 5vw 20vh 10vw 20vh; }
@@ -443,7 +445,8 @@ body {
 @media (max-width: 600px) {
   /* HEADER */
   .main-header {
-    height: 20vw; }
+    height: 20vw;
+    padding-left: 2vh; }
     .main-header .logo {
       height: 10vh;
       width: 15vw; }
@@ -486,10 +489,6 @@ body {
     .article-ssn .imagen-ssn {
       width: 20vw;
       height: 5vh; }
-    .article-ssn .informacion {
-      font-size: .1px; }
-    .article-ssn .derechos {
-      font-size: xx-small; }
     .article-ssn .section-producto {
       display: flex;
       flex-direction: column; }
@@ -501,4 +500,128 @@ body {
       width: 50vw;
       height: 50vh; }
     .article-ssn .text-automoviles {
-      font-size: small; } }
+      font-size: small; }
+  .section-producto {
+    padding-left: 8vh;
+    padding-right: 2vh; }
+    .section-producto .title-producto {
+      font-size: x-large; }
+    .section-producto .text-producto {
+      font-size: medium; }
+    .section-producto .div-automoviles {
+      display: flex;
+      flex-direction: column; }
+    .section-producto .imagen-automoviles {
+      width: 40vw; }
+    .section-producto .text-automoviles {
+      font-size: medium; }
+    .section-producto .div-personas {
+      display: flex;
+      flex-direction: column; }
+    .section-producto .text-personas {
+      font-size: medium; }
+    .section-producto .imagen-personas {
+      width: 40vw; }
+  .main-siniestros {
+    padding-left: 2vh;
+    padding-right: 2vh; }
+  .section-siniestros {
+    font-size: large; }
+  .article-siniestros {
+    display: flex;
+    flex-direction: column-reverse; }
+  .text-siniestro {
+    font-size: small; }
+  .imagen-sin-lesionados {
+    width: 80vw;
+    height: 20vh; }
+  .imagen-lesionados {
+    width: 80vw;
+    height: 20vh; }
+  .article-quienes {
+    padding-left: 2vw;
+    padding-right: 2vh;
+    display: flex;
+    flex-direction: column; }
+    .article-quienes .text-quienes {
+      padding-top: 2vw;
+      padding-bottom: 2vw;
+      padding-right: 2vh;
+      font-size: large; }
+    .article-quienes .imagen-quienes {
+      padding-left: 4vh;
+      width: 80vw;
+      height: 40vh; }
+  .article-contacto {
+    padding-left: 2vh;
+    padding-right: 2vh; }
+    .article-contacto .title-contacto {
+      font-size: x-large; }
+    .article-contacto .item-contacto {
+      font-size: large; }
+  .contacto-empleados {
+    padding-left: 2vh;
+    padding-right: 2vh;
+    font-size: large; }
+    .contacto-empleados .silueta {
+      width: 30vw;
+      height: 20vh; }
+    .contacto-empleados .text-empleados {
+      padding-top: 4vh; }
+  .main-header__nav {
+    font-family: var(--text-base); }
+  .main-cotizacion {
+    display: grid;
+    grid-gap: 2px;
+    padding: 5vw 2vh 5vw 2vh;
+    display: flex;
+    align-content: center; }
+  .section-vida {
+    padding: 5vw 2vh 10vw 2vh; }
+  .title-vida {
+    font-size: x-large; }
+  .text-vida {
+    font-size: x-large; }
+  .article-vida {
+    display: flex;
+    flex-direction: column; }
+  .imagen-vida {
+    width: 70vw;
+    height: 30vh; }
+  .section-familia {
+    padding: 5vw 2vh 10vw 2vh; }
+  .title-familia {
+    font-size: x-large; }
+  .article-familia {
+    display: flex;
+    flex-direction: column-reverse; }
+  .imagen-familia {
+    width: 60vw;
+    height: 40vh; }
+  .text-familia {
+    font-size: x-large; }
+  .section-accidentes-personales {
+    padding: 5vw 2vh 5vw 2vh; }
+    .section-accidentes-personales .title-accidentes-personales {
+      font-size: x-large; }
+    .section-accidentes-personales .text-accidentes-personales {
+      font-size: x-large; }
+    .section-accidentes-personales .article-accidentes {
+      display: flex;
+      flex-direction: column; }
+    .section-accidentes-personales .imagen-invalidez {
+      height: 30vh; }
+    .section-accidentes-personales .title-invalidez {
+      font-size: x-large; }
+    .section-accidentes-personales .text-invalidez {
+      font-size: large; }
+    .section-accidentes-personales .imagen-asistencia {
+      height: 30vh; }
+    .section-accidentes-personales .title-asistencia {
+      font-size: x-large; }
+    .section-accidentes-personales .text-asistencia {
+      font-size: large; }
+    .section-accidentes-personales .div-accidentes {
+      display: flex;
+      flex-direction: column;
+      padding-top: 10vw; } }

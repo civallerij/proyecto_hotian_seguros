@@ -543,6 +543,7 @@ body {
     }
    
 }
+    /* VIDA */ 
 
 .section-vida{
     font-family: var(--text-alt);
@@ -568,7 +569,8 @@ body {
         height: 70vh;  
        
     }
-   
+   /* FAMILIA */
+
 .section-familia{
         font-family: var(--text-alt);
         padding: 5vw 20vh 10vw 20vh;
@@ -636,9 +638,10 @@ body {
 .main-header {
    
     height: 20vw; 
-    
+    padding-left: 2vh;
     .logo{
     @include size(15vw, 10vh ) 
+    
     }
     .menu{
         font-size: xx-small;
@@ -699,15 +702,9 @@ body {
     }
     
     
-        .informacion{
-            
-            font-size: .1px;
-        }
+           
     
-        .derechos{
-            
-            font-size: xx-small;
-        }
+       
         .section-producto{
             display: flex;
             flex-direction: column;}
@@ -732,11 +729,226 @@ body {
         
     }
 
+    .section-producto{
+       
+        padding-left: 8vh;
+        padding-right: 2vh;
+       .title-producto{
+        font-size: x-large;
+       }
+       .text-producto{
+        font-size: medium;
+        
+      }
+      .div-automoviles{
+        display: flex;
+        flex-direction: column;
+        
+      }
+      .imagen-automoviles{
+        width: 40vw;
+        
+      }
+      .text-automoviles{
+        font-size: medium;
+       
+        
+      }
     
-
+      .div-personas {
+        display: flex;
+        flex-direction: column;
+       
+      }
+      .text-personas{
+        font-size: medium;
+        
+      }
+      .imagen-personas{
+        width: 40vw;
+        
+      }
+    }
     
-}
+    .main-siniestros{
+        padding-left: 2vh;
+        padding-right: 2vh;
+    }
+    .section-siniestros{        
+    font-size: large;     
+    }
+    .article-siniestros{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .text-siniestro{
+        font-size: small;
+    }
+    .imagen-sin-lesionados {
+        width: 80vw;
+        height: 20vh;
+        
+    }
+    .imagen-lesionados {
+        width: 80vw;
+        height: 20vh;
+        
+    }
 
+    .article-quienes {
+        padding-left: 2vw;
+        padding-right: 2vh;
+        display: flex;
+        flex-direction: column;
+        
+    
+        .text-quienes {
+       padding-top: 2vw;
+       padding-bottom: 2vw;
+       padding-right: 2vh;
+        font-size: large;
+           
+        }
+        .imagen-quienes{
+        padding-left: 4vh;
+        width: 80vw;
+        height: 40vh;
+        }
+    }
+    
+    .article-contacto {
+        padding-left: 2vh;
+        padding-right: 2vh;
+        
+        
+        .title-contacto{
+           
+            font-size: x-large;
+        }
+        .item-contacto{
+            
+            font-size: large;
+        }
+    }  
+
+        .contacto-empleados{
+            padding-left: 2vh;
+            padding-right: 2vh;
+            font-size: large;
+           
+            .silueta{
+               width: 30vw;
+                height: 20vh;
+            }
+            .text-empleados{
+                padding-top: 4vh;
+            }
+        }
+        .main-header__nav{
+            font-family: var(--text-base);
+        }
+        .main-cotizacion {
+            
+            display: grid;
+            grid-gap: 2px;
+            padding: 5vw 2vh 5vw 2vh;
+            display: flex;
+            align-content: center;
+            
+        }
+        
+    
+    .section-vida{
+        padding: 5vw 2vh 10vw 2vh;
+    }    
+        .title-vida{
+            font-size: x-large;
+        }
+        .text-vida{
+            font-size: x-large; 
+        }
+        .article-vida{
+            display: flex;
+            flex-direction: column;
+       }
+        .imagen-vida{
+            width: 70vw;
+            height: 30vh;  
+           
+        }
+
+        .section-familia{
+            padding: 5vw 2vh 10vw 2vh;
+        }    
+            .title-familia{
+                font-size: x-large;
+            }
+            
+            .article-familia{
+                display: flex;
+                flex-direction: column-reverse;
+           }
+            .imagen-familia{
+                width: 60vw;
+                height: 40vh;  
+               
+            }
+            .text-familia{
+                font-size: x-large;
+                
+            }
+      
+            .section-accidentes-personales{
+                
+                padding: 5vw 2vh 5vw 2vh;
+            
+                .title-accidentes-personales{
+                    font-size: x-large;
+                    }
+                .text-accidentes-personales{
+                    font-size: x-large;
+                   
+                    
+                }
+                .article-accidentes{
+                    display: flex;
+                    flex-direction: column;
+               }
+                .imagen-invalidez{
+                    
+                    height: 30vh;  
+                   
+                }
+                .title-invalidez {
+                    font-size: x-large;
+                }
+                .text-invalidez {
+                    font-size: large;
+                }
+                
+                
+                .imagen-asistencia{
+                    
+                    height: 30vh;
+                    
+                }
+                
+                
+                .title-asistencia {
+                    font-size: x-large;
+                    
+                }
+                .text-asistencia {
+                    font-size: large;
+                   
+                }
+                .div-accidentes{
+                    display: flex;
+                    flex-direction: column;
+                    padding-top: 10vw;
+                }
+     }   
+    }
     
 
 
