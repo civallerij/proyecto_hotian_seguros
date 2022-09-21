@@ -60,215 +60,445 @@ body {
 .main-header {
   background-color: var(--primary);
   width: 100vw;
-  height: 17vw; }
+  height: 10vw;
+  display: flex;
+  justify-content: space-between; }
   .main-header .logo {
     height: 20vh;
-    width: 20vw; }
+    width: 30vw; }
+  .main-header .logo {
+    display: flex;
+    justify-content: start;
+    padding-top: 1vw;
+    padding-bottom: 1vw; }
   .main-header .main-header__imagen {
     height: 10vh;
     width: 15vw; }
-  .main-header .main-header__principal {
+  .main-header .main-header__imagen {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 2vw; }
+    position: absolute 90vw; }
 
 .menu {
-  display: flex;
-  justify-content: space-around;
   color: var(--secondary);
-  list-style-type: none; }
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 6vw;
+  padding-right: 5vw; }
   .menu .menu__link {
-    padding: 1.2vw;
+    padding: 2.1vw;
     text-decoration: none;
-    color: var(--alternative-white);
-    /* border: 0.2vw solid var(--tercery) */ }
+    color: var(--alternative-white); }
   .menu .menu__link:hover {
-    background-color: #05A0F6;
     transition: ease-in-out 1.5s; }
   .menu .menu__link-act {
     padding: 1.2vw;
     text-decoration: none;
     color: var(--alternative-white);
-    border: 0.2vw solid var(--secondary); }
+    border-bottom: .2vw solid gold; }
   .menu .menu__link-act:hover {
-    background-color: var(--tercery);
-    transition: ease-in-out 1.5s; }
+    transition: ease-in-out .5s;
+    border-radius: 2vw; }
 
 /* MAIN INDEX */
 .main {
-  background-image: url(https://fondosmil.com/fondo/31337.jpg); }
+  background-image: url(https://fondosmil.com/fondo/23518.jpg);
+  padding-left: 2vh;
+  padding-right: 2vh; }
 
 .cards {
-  padding: 1vw;
+  padding: 8vw 10vh 5vw 10vh;
   display: flex;
   justify-content: space-around; }
   .cards .card {
-    transition: 1.5s;
-    width: 20vw;
-    height: 30vh;
-    border: 0.2vw solid var(--alternative-black); }
-  .cards .card:hover {
-    height: 40vh;
-    width: 20vw; }
-
-.article-home {
-  margin-top: 2vw;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around; }
-  .article-home .imagen-home {
-    width: 40vw;
-    height: 50vh;
-    border: 0.2vw solid var(--alternative-black); }
-  .article-home .text-home {
-    padding: 2vw;
-    width: 40vw;
-    height: 40vh;
-    font-size: var(--text-xl);
-    font-family: var(--text-base); }
-
-.article-icon {
-  display: flex;
-  justify-content: space-around; }
-  .article-icon .icon-home {
-    width: 20vw;
+    width: 27vw;
     height: 30vh; }
+
+.section-home {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(3, auto);
+  padding: 0vw 20vh 5vw 20vh; }
+
+.imagen-home-1:hover {
+  width: 41vw;
+  height: 40vh; }
+
+.imagen-home-2:hover {
+  width: 41vw;
+  height: 40vh; }
+
+.imagen-home-3:hover {
+  width: 27vw;
+  height: 26vh; }
+
+.imagen-home-4:hover {
+  width: 27vw;
+  height: 26vh; }
+
+.imagen-home-5:hover {
+  width: 27vw;
+  height: 26vh; }
+
+.section-home .article-home-1 {
+  grid-column: span 3;
+  grid-row: span 1; }
+
+.section-home .article-home-2 {
+  grid-column: span 3;
+  grid-row: span 1; }
+
+.section-home .article-home-3 {
+  grid-column: span 2;
+  grid-row: span 1; }
+
+.section-home .article-home-4 {
+  grid-column: span 2;
+  grid-row: span 1; }
+
+.section-home .article-home-5 {
+  grid-column: span 2;
+  grid-row: span 1; }
+
+.article-ssn {
+  background-color: #FDFDFF;
+  padding: 1vw 20vh 1vw 20vh;
+  display: flex;
+  justify-content: space-around;
+  border-top: solid 2px #343232;
+  border-bottom: solid 2px #343232; }
+  .article-ssn .text-ssn-1 {
+    display: flex;
+    align-items: center;
+    font-family: var(--text-alt);
+    font-size: large;
+    color: #849299; }
+  .article-ssn .text-ssn-2 {
+    display: flex;
+    align-items: center;
+    font-family: var(--text-alt);
+    font-size: large;
+    color: #849299; }
+  .article-ssn .imagen-ssn {
+    width: 10vw;
+    height: 10vh; }
+
+.article-facebook {
+  display: flex;
+  justify-content: end;
+  padding-bottom: 2vw; }
+  .article-facebook .imagen-facebook {
+    width: 5vw;
+    height: 5vh; }
 
 /* MAIN PRODUCTOS */
 .section-producto {
-  padding: 5vw;
-  display: grid;
-  grid-template-columns: 50vw 20vw 20vw;
-  grid-column-gap: 1.5vw; }
+  background-image: url(https://fondosmil.com/fondo/23518.jpg);
+  padding: 2vw 20vh 2vw 20vh;
+  font-family: var(--text-alt); }
+  .section-producto .title-producto {
+    font-size: xx-large;
+    color: grey; }
   .section-producto .text-producto {
+    font-size: xx-large;
     color: var(--alternative-white);
-    font-size: var(--text-md); }
+    padding-bottom: 5vw; }
+  .section-producto .div-automoviles {
+    display: flex;
+    flex-direction: row;
+    padding-left: 2vh;
+    padding-bottom: 5vw; }
+  .section-producto .imagen-automoviles {
+    width: 20vw;
+    height: 20vh; }
+  .section-producto .text-automoviles {
+    font-size: x-large;
+    color: var(--alternative-white); }
+  .section-producto .div-personas {
+    display: flex;
+    flex-direction: row;
+    padding-left: 2vh;
+    padding-bottom: 5vw; }
+  .section-producto .text-personas {
+    font-size: x-large;
+    color: var(--alternative-white); }
+  .section-producto .imagen-personas {
+    width: 20vw;
+    height: 20vh; }
 
 /* MAIN SINIESTROS */
-.article-form {
-  display: flex;
-  justify-content: center;
-  align-items: center; }
+.main-siniestros {
+  padding-left: 10vh;
+  padding-right: 10vh;
+  background-image: url(https://fondosmil.com/fondo/23518.jpg); }
 
-.article-siniestros .title-siniestro {
-  display: flex;
-  justify-content: center;
-  color: var(--alternative-white); }
+.section-siniestros {
+  color: #849299;
+  padding: 5vw 0vh 5vw 0vh;
+  font-family: var(--text-alt);
+  font-size: xx-large; }
 
-.article-siniestros .text-siniestro {
+.article-siniestros {
   display: flex;
-  justify-content: center;
+  flex-direction: row; }
+
+.text-siniestro {
+  padding-top: 5vw;
   color: var(--alternative-white);
-  font-size: var(--text-sm);
-  padding-bottom: 2vw;
-  padding-left: 5vw;
-  padding-right: 5vw; }
+  font-family: var(--text-alt);
+  font-size: medium; }
 
-.article-form {
-  padding-bottom: 3vw; }
-  .article-form .form-siniestro {
-    padding: 0.3vw;
-    color: var(--alternative-white);
-    font-size: var(--text-sm);
-    color: var(--alternative-white); }
-  .article-form .form-submit {
-    display: flex;
-    justify-content: center;
-    margin: 0.2vw; }
+.imagen-lesionados {
+  width: 40vw;
+  height: 60vh; }
+
+.imagen-sin-lesionados {
+  width: 40vw;
+  height: 60vh; }
 
 /*MAIN QUIENES SOMOS */
 .article-quienes {
-  padding: 2vw 4vw 2vw 4vw;
-  display: grid;
-  grid-template-columns: 40vw 40vw;
-  grid-column-gap: 1.5vw; }
+  font-family: var(--text-alt);
+  display: flex;
+  flex-direction: row;
+  padding: 5vw 20vh 5vw 20vh; }
   .article-quienes .text-quienes {
     color: var(--alternative-white);
-    font-size: var(--text-l); }
+    font-size: x-large;
+    padding-left: 5vh; }
+  .article-quienes .imagen-quienes {
+    width: 45vw;
+    height: 60vh; }
 
 /* MAIN CONTACTO */
 .article-contacto {
-  color: var(--alternative-white);
-  font-size: var(--text-md); }
-  .article-contacto .title-contacto {
-    display: flex;
-    justify-content: center; }
-  .article-contacto .item-contacto {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 2vw; }
-
-.article-contacto-form {
-  margin-bottom: 3vw;
-  color: var(--alternative-white);
-  font-size: var(--text-md);
+  font-family: var(--text-alt);
   display: flex;
-  justify-content: center; }
-  .article-contacto-form .form-contacto {
+  flex-direction: column;
+  padding: 5vw 20vh 5vw 20vh; }
+  .article-contacto .title-contacto {
+    color: grey;
+    font-size: xx-large; }
+  .article-contacto .item-contacto {
+    color: var(--alternative-white);
+    font-size: x-large; }
+
+.contacto-empleados {
+  font-family: var(--text-alt);
+  color: var(--alternative-white);
+  font-size: x-large;
+  display: flex;
+  justify-content: center;
+  flex-direction: row; }
+  .contacto-empleados .silueta {
+    width: 20vw;
+    height: 40vh; }
+  .contacto-empleados .text-empleados {
     display: flex;
-    justify-content: center; }
+    flex-direction: column;
+    padding-top: 5vw; }
+
+/* COTIZACIONES */
+.main-header__nav {
+  font-family: var(--text-base); }
+
+.main-cotizacion {
+  background-image: url(https://fondosmil.com/fondo/23518.jpg);
+  font-family: var(--text-alt);
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(1, auto);
+  padding: 5vw 90vh 5vw 60vh;
+  display: flex;
+  align-content: center;
+  color: var(--alternative-white); }
+  .main-cotizacion .title-cotiza-tu-seguro {
+    padding-bottom: 2vw; }
+  .main-cotizacion .title-flota {
+    padding-top: 2vw; }
+  .main-cotizacion .title-cantidad {
+    padding-top: 2vw; }
+  .main-cotizacion .flota-cantidad {
+    padding-top: 2vw; }
+  .main-cotizacion .title-whatsapp {
+    padding-top: 1vw; }
+  .main-cotizacion .col-00 {
+    padding-top: 1vw; }
+  .main-cotizacion .form-control {
+    padding-top: 1vw; }
+  .main-cotizacion .form-label {
+    padding-top: 2vw;
+    width: 50vw; }
+  .main-cotizacion .form-label-1 {
+    padding-right: 0px; }
+  .main-cotizacion .form-check {
+    padding-top: 2vw;
+    padding-bottom: 2vw; }
+  .main-cotizacion .form-check-1 {
+    padding-bottom: 3vw; }
+
+/* ACCIDENTES PERSONALES */
+.section-accidentes-personales {
+  font-family: var(--text-alt);
+  padding: 5vw 20vh 10vw 20vh; }
+  .section-accidentes-personales .title-accidentes-personales {
+    font-size: xx-large;
+    color: gray; }
+  .section-accidentes-personales .text-accidentes-personales {
+    font-size: x-large;
+    color: var(--alternative-white);
+    padding-top: 2vw;
+    padding-bottom: 2vw; }
+  .section-accidentes-personales .article-accidentes {
+    display: flex;
+    flex-direction: row; }
+  .section-accidentes-personales .imagen-invalidez {
+    width: 50vw;
+    height: 90vh; }
+  .section-accidentes-personales .title-invalidez {
+    font-size: xx-large;
+    color: var(--primary); }
+  .section-accidentes-personales .text-invalidez {
+    font-size: x-large;
+    color: var(--alternative-white); }
+  .section-accidentes-personales .imagen-asistencia {
+    width: 40vw;
+    height: 90vh; }
+  .section-accidentes-personales .title-asistencia {
+    font-size: xx-large;
+    color: var(--primary); }
+  .section-accidentes-personales .text-asistencia {
+    font-size: x-large;
+    color: var(--alternative-white); }
+  .section-accidentes-personales .div-accidentes {
+    display: flex;
+    flex-direction: column;
+    padding-top: 10vw; }
+
+.section-vida {
+  font-family: var(--text-alt);
+  padding: 5vw 20vh 10vw 20vh; }
+
+.title-vida {
+  font-size: xx-large;
+  color: gray; }
+
+.text-vida {
+  font-size: x-large;
+  color: var(--alternative-white);
+  padding-top: 2vw;
+  padding-bottom: 2vw; }
+
+.article-vida {
+  display: flex;
+  flex-direction: row; }
+
+.imagen-vida {
+  width: 50vw;
+  height: 70vh; }
+
+.section-familia {
+  font-family: var(--text-alt);
+  padding: 5vw 20vh 10vw 20vh; }
+
+.title-familia {
+  font-size: xx-large;
+  color: gray; }
+
+.article-familia {
+  display: flex;
+  flex-direction: row; }
+
+.imagen-familia {
+  width: 50vw;
+  height: 70vh; }
+
+.text-familia {
+  font-size: x-large;
+  color: var(--alternative-white);
+  padding-top: 2vw;
+  padding-bottom: 2vw; }
 
 /* FOOTER */
 .main-footer__section {
   background-color: var(--primary);
   color: var(--alternative-white);
   font-size: var(--text-sm); }
+  .main-footer__section .hotian-seguros {
+    font-size: xx-large; }
   .main-footer__section .informacion {
+    padding-top: 2vh;
     display: flex;
-    justify-content: center; }
+    justify-content: center;
+    font-size: large; }
   .main-footer__section .derechos {
+    padding-top: 2vh;
     display: flex;
-    justify-content: center; }
+    justify-content: center;
+    font-size: medium; }
 
 /* RESPONSIVE */
 @media (max-width: 600px) {
+  /* HEADER */
   .main-header {
-    height: 42vw; }
-    .main-header .main-header__imagen {
-      width: 30vw;
-      height: 8vh; }
+    height: 20vw; }
     .main-header .logo {
-      width: 20vw;
-      height: 20vh; }
-    .main-header .menu__link {
-      font-size: var(--text-sm); }
-  .main {
-    height: 150vw; }
-  .card {
-    height: 10vh; }
-  .article-home .text-home {
-    font-size: var(--text-md) !important; }
-  .imagen-home {
-    height: 20vh; }
-  .icon-home {
-    width: 25vw;
-    height: 8vh; }
-  .main-footer__section {
-    font-size: 1.5vw; }
-  .section-producto {
-    grid-template-columns: 90vw; }
-    .section-producto .text-producto {
-      font-size: var(--text-sm);
-      margin: 5vw; }
-  .article-siniestros .text-siniestro {
-    font-size: 2vw !important;
-    margin-left: 1vw;
-    margin-right: 1vw; }
-  .form-siniestro {
-    font-size: 1.5vw;
-    margin-bottom: 1.5vw; }
-  .article-quienes {
+      height: 10vh;
+      width: 15vw; }
+    .main-header .menu {
+      font-size: xx-small;
+      display: flex;
+      flex-direction: row; }
+  .cards {
+    padding: 8vw 0vh 5vw 0vh;
     display: flex;
-    flex-wrap: wrap;
-    padding: 10vw 5vw 30vw 5vw; }
-    .article-quienes .text-quienes {
-      font-size: var(--text-sm); }
-    .article-quienes .imagen-quienes {
-      width: 90vw;
-      height: 40vh;
-      padding-bottom: 15vw; }
-  .item-contacto {
-    font-size: var(--text-sm);
-    padding-top: 10vw;
-    padding-bottom: 2vw; } }
+    flex-direction: row; }
+    .cards .card {
+      width: 20vw;
+      height: 10vh; }
+  .section-home {
+    display: flex;
+    flex-direction: column;
+    padding-left: 12vh; }
+  .imagen-home-1 {
+    width: 40vw;
+    height: 10vh; }
+  .imagen-home-2 {
+    width: 40vw;
+    height: 10vh; }
+  .imagen-home-3 {
+    width: 40vw;
+    height: 10vh; }
+  .imagen-home-4 {
+    width: 40vw;
+    height: 10vh; }
+  .imagen-home-5 {
+    width: 40vw;
+    height: 10vh; }
+  .article-ssn {
+    padding: 0vw 2vh 0vw 2vh; }
+    .article-ssn .text-ssn-1 {
+      font-size: xx-small; }
+    .article-ssn .text-ssn-2 {
+      font-size: xx-small; }
+    .article-ssn .imagen-ssn {
+      width: 20vw;
+      height: 5vh; }
+    .article-ssn .informacion {
+      font-size: .1px; }
+    .article-ssn .derechos {
+      font-size: xx-small; }
+    .article-ssn .section-producto {
+      display: flex;
+      flex-direction: column; }
+    .article-ssn .title-producto {
+      font-size: small; }
+    .article-ssn .text-producto {
+      font-size: small; }
+    .article-ssn .imagen-automoviles {
+      width: 50vw;
+      height: 50vh; }
+    .article-ssn .text-automoviles {
+      font-size: small; } }
